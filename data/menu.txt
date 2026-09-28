@@ -1,0 +1,294 @@
+Dish: Sweet Corn Soup
+Category: Soup
+Type: Vegetarian
+Price: 90
+Spice Level: Mild
+Description: Creamy soup made with sweet corn kernels, cornstarch, and light seasoning. Vegan option available, gluten-free.
+
+Dish: Hot and Sour Soup
+Category: Soup
+Type: Vegetarian
+Price: 100
+Spice Level: Medium
+Description: Tangy and spicy soup with mixed vegetables, vinegar, and white pepper. Contains soy.
+
+Dish: Chicken Clear Soup
+Category: Soup
+Type: Non-Vegetarian
+Price: 110
+Spice Level: Mild
+Description: Light broth-based soup with shredded chicken, herbs, and vegetables. Gluten-free.
+
+Dish: Tomato Basil Soup
+Category: Soup
+Type: Vegetarian
+Price: 95
+Spice Level: Mild
+Description: Roasted tomato soup blended with fresh basil and a touch of cream. Vegan option available, gluten-free.
+
+Dish: Greek Salad
+Category: Salad
+Type: Vegetarian
+Price: 150
+Spice Level: None
+Description: Cucumber, tomato, olives, red onion, and feta cheese tossed in olive oil and oregano. Gluten-free.
+
+Dish: Chicken Caesar Salad
+Category: Salad
+Type: Non-Vegetarian
+Price: 190
+Spice Level: Mild
+Description: Grilled chicken over romaine lettuce with parmesan, croutons, and Caesar dressing. Contains gluten, dairy.
+
+Dish: Sprouts and Corn Salad
+Category: Salad
+Type: Vegetarian
+Price: 110
+Spice Level: Mild
+Description: Mixed sprouts, boiled corn, onion, and tomato with lemon dressing. Vegan, gluten-free.
+
+Dish: Fruit Chaat
+Category: Salad
+Type: Vegetarian
+Price: 100
+Spice Level: Mild
+Description: Seasonal fruits tossed with chaat masala and lemon juice. Vegan, gluten-free.
+
+Dish: Masala Chai
+Category: Beverage
+Type: Vegetarian
+Price: 40
+Spice Level: None
+Description: Spiced Indian tea brewed with milk, cardamom, and ginger. Contains dairy.
+
+Dish: Cold Coffee
+Category: Beverage
+Type: Vegetarian
+Price: 90
+Spice Level: None
+Description: Blended coffee with milk, ice, and a scoop of vanilla ice cream. Contains dairy.
+
+Dish: Mango Lassi
+Category: Beverage
+Type: Vegetarian
+Price: 80
+Spice Level: None
+Description: Sweet yogurt-based drink blended with fresh mango pulp. Contains dairy, gluten-free.
+
+Dish: Fresh Lime Soda
+Category: Beverage
+Type: Vegetarian
+Price: 50
+Spice Level: None
+Description: Refreshing lime juice with soda water, sweet or salted. Vegan, gluten-free.
+
+Dish: Watermelon Juice
+Category: Beverage
+Type: Vegetarian
+Price: 70
+Spice Level: None
+Description: Freshly squeezed watermelon juice, no added sugar. Vegan, gluten-free.
+
+Dish: Butterscotch Ice Cream
+Category: Dessert
+Type: Vegetarian
+Price: 80
+Spice Level: None
+Description: Creamy butterscotch-flavored ice cream with caramelized nut bits. Contains dairy, nuts.
+
+Dish: Rasmalai
+Category: Dessert
+Type: Vegetarian
+Price: 90
+Spice Level: None
+Description: Soft cottage cheese discs soaked in sweetened, cardamom-flavored milk. Contains dairy.
+
+Dish: Chocolate Brownie with Ice Cream
+Category: Dessert
+Type: Vegetarian
+Price: 130
+Spice Level: None
+Description: Warm chocolate brownie served with vanilla ice cream and chocolate syrup. Contains dairy, gluten, egg.
+
+Dish: Gajar Halwa
+Category: Dessert
+Type: Vegetarian
+Price: 100
+Spice Level: None
+Description: Grated carrots slow-cooked in milk, ghee, and sugar, garnished with nuts. Contains dairy, nuts.
+
+Dish: Paneer Butter Masala
+Category: Main Course
+Type: Vegetarian
+Price: 220
+Spice Level: Mild
+Description: Cottage cheese cubes simmered in a rich tomato-butter gravy with cream and mild spices. Gluten-free.
+
+Dish: Chicken Tikka Masala
+Category: Main Course
+Type: Non-Vegetarian
+Price: 260
+Spice Level: Medium
+Description: Grilled chicken chunks in a creamy tomato-based curry with garam masala. Contains dairy.
+
+Dish: Veg Hakka Noodles
+Category: Chinese
+Type: Vegetarian
+Price: 150
+Spice Level: Medium
+Description: Stir-fried noodles with mixed vegetables, soy sauce, and spring onions. Contains gluten.
+
+Dish: Mutton Rogan Josh
+Category: Main Course
+Type: Non-Vegetarian
+Price: 320
+Spice Level: Hot
+Description: Slow-cooked mutton in a Kashmiri red chili and yogurt-based gravy. Gluten-free.
+
+Dish: Masala Dosa
+Category: South Indian
+Type: Vegetarian
+Price: 90
+Spice Level: Mild
+Description: Crispy rice-lentil crepe filled with spiced potato masala, served with sambar and chutney. Gluten-free, vegan.
+
+Dish: Chicken Biryani
+Category: Rice
+Type: Non-Vegetarian
+Price: 240
+Spice Level: Medium
+Description: Basmati rice layered with marinated chicken, saffron, and fried onions. Gluten-free.
+
+Dish: Palak Paneer
+Category: Main Course
+Type: Vegetarian
+Price: 200
+Spice Level: Mild
+Description: Cottage cheese cubes in a smooth spinach gravy with garlic and cumin. Gluten-free.
+
+Dish: Prawn Ghee Roast
+Category: Seafood
+Type: Non-Vegetarian
+Price: 340
+Spice Level: Hot
+Description: Prawns cooked in a spicy Mangalorean-style ghee roast masala. Gluten-free, contains shellfish.
+
+Dish: Vegetable Spring Rolls
+Category: Starter
+Type: Vegetarian
+Price: 130
+Spice Level: Mild
+Description: Crispy fried rolls stuffed with cabbage, carrot, and glass noodles. Contains gluten.
+
+Dish: Tandoori Chicken
+Category: Starter
+Type: Non-Vegetarian
+Price: 280
+Spice Level: Medium
+Description: Chicken marinated in yogurt and tandoori spices, roasted in a clay oven. Gluten-free.
+
+Dish: Chana Masala
+Category: Main Course
+Type: Vegetarian
+Price: 140
+Spice Level: Medium
+Description: Chickpeas simmered in a spiced onion-tomato gravy. Vegan, gluten-free.
+
+Dish: Fish Curry
+Category: Seafood
+Type: Non-Vegetarian
+Price: 260
+Spice Level: Hot
+Description: Fresh fish cooked in a tangy coconut-based curry with curry leaves. Gluten-free.
+
+Dish: Veg Manchurian
+Category: Chinese
+Type: Vegetarian
+Price: 160
+Spice Level: Medium
+Description: Fried vegetable balls tossed in a sweet-spicy Indo-Chinese sauce. Vegan.
+
+Dish: Mutton Kheema Pav
+Category: Street Food
+Type: Non-Vegetarian
+Price: 180
+Spice Level: Medium
+Description: Spiced minced mutton served with soft buttered pav buns. Contains gluten.
+
+Dish: Idli Sambar
+Category: South Indian
+Type: Vegetarian
+Price: 70
+Spice Level: Mild
+Description: Steamed rice cakes served with lentil sambar and coconut chutney. Vegan, gluten-free.
+
+Dish: Butter Chicken
+Category: Main Course
+Type: Non-Vegetarian
+Price: 270
+Spice Level: Mild
+Description: Tandoori chicken in a creamy tomato-butter gravy. Contains dairy, gluten-free.
+
+Dish: Aloo Paratha
+Category: Bread
+Type: Vegetarian
+Price: 80
+Spice Level: Mild
+Description: Whole wheat flatbread stuffed with spiced mashed potatoes, served with curd and pickle. Contains gluten.
+
+Dish: Egg Fried Rice
+Category: Rice
+Type: Non-Vegetarian
+Price: 150
+Spice Level: Mild
+Description: Wok-tossed rice with scrambled eggs, vegetables, and soy sauce. Contains egg, gluten.
+
+Dish: Dal Tadka
+Category: Main Course
+Type: Vegetarian
+Price: 120
+Spice Level: Mild
+Description: Yellow lentils tempered with cumin, garlic, and ghee. Vegan option available, gluten-free.
+
+Dish: Chilli Chicken
+Category: Starter
+Type: Non-Vegetarian
+Price: 250
+Spice Level: Hot
+Description: Deep-fried chicken tossed in a spicy soy-chilli sauce with capsicum and onions. Contains gluten.
+
+Dish: Rava Uttapam
+Category: South Indian
+Type: Vegetarian
+Price: 100
+Spice Level: Mild
+Description: Thick semolina pancake topped with onions, tomatoes, and green chilies. Vegan.
+
+Dish: Mutton Seekh Kebab
+Category: Starter
+Type: Non-Vegetarian
+Price: 300
+Spice Level: Medium
+Description: Skewered minced mutton grilled with herbs and spices. Gluten-free.
+
+Dish: Paneer Tikka
+Category: Starter
+Type: Vegetarian
+Price: 190
+Spice Level: Medium
+Description: Marinated cottage cheese cubes grilled with bell peppers and onions. Gluten-free.
+
+Dish: Chicken Manchurian
+Category: Chinese
+Type: Non-Vegetarian
+Price: 230
+Spice Level: Hot
+Description: Fried chicken chunks tossed in a spicy soy-based Indo-Chinese sauce.
+
+Dish: Gulab Jamun
+Category: Dessert
+Type: Vegetarian
+Price: 60
+Spice Level: None
+Description: Deep-fried milk dumplings soaked in sugar syrup. Contains dairy, gluten.
+
