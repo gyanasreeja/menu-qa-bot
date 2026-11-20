@@ -1,26 +1,34 @@
+import os
 from dotenv import load_dotenv
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain_chroma import Chroma
 
+from Embeddings import LocalEmbeddings
 
-load_dotenv()
+load_dotenv(override=True)
 
 DB_DIR = "./chroma_db"
+# Free-tier friendly options: "llama-3.3-70b-versatile" (smarter),
+# "llama-3.1-8b-instant" (faster, higher limits)
+GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
-# 1. Same embedding model as ingest.py (must match!)
-embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
-
-# 2. Load the saved vector store
+embeddings = LocalEmbeddings()
 vectorstore = Chroma(persist_directory=DB_DIR, embedding_function=embeddings)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
+# k=12 so list-style questions ("all veg starters") see enough dishes
+retriever = vectorstore.as_retriever(search_kwargs={"k": 12})
 
-# 3. LLM
-llm = ChatGoogleGenerativeAI(model="gemini-3.8-flash", temperature=0)
+llm = ChatGroq(model=GROQ_MODEL, temperature=0)  # reads GROQ_API_KEY from .env
 
-# 4. Prompt template
-PROMPT = """You are a helpful restaurant assistant.
+PROMPT = """You are a friendly, concise restaurant assistant.
 Answer the customer's question using ONLY the menu items below.
-If the answer is not in the menu, say "Sorry, I don't see that on our menu."
+Prices are in rupees (₹). If the answer is not in the menu, say
+"Sorry, I don't see that on our menu."
+When listing dishes, include the price. Use short bullet points for lists.
+For allergen/diet questions, rely strictly on the Description text and
+mention that guests with severe allergies should confirm with staff.
+
+Recent conversation (for follow-up questions):
+{history}
 
 Menu items:
 {context}
@@ -30,24 +38,23 @@ Question: {question}
 Answer:"""
 
 
-def ask(question: str) -> str:
-    # Retrieve top matching dishes
-    docs = retriever.invoke(question)
-    context = "\n\n".join(doc.page_content for doc in docs)
+def ask(question: str, history: list[dict] | None = None) -> str:
+    history = history or []
+    recent = history[-4:]
 
-    # Build prompt and call Gemini
-    prompt = PROMPT.format(context=context, question=question)
+    # Include the previous user question in retrieval so follow-ups
+    # like "and the vegan ones?" still find the right dishes.
+    prev_user = next((m["content"] for m in reversed(recent) if m["role"] == "user"), "")
+    docs = retriever.invoke(f"{prev_user} {question}".strip())
+    context = "\n\n".join(d.page_content for d in docs)
+
+    hist_text = "\n".join(
+        f"{m['role'].capitalize()}: {m['content'][:300]}" for m in recent
+    ) or "(none)"
+
+    prompt = PROMPT.format(context=context, question=question, history=hist_text)
     response = llm.invoke(prompt)
-
-    # Newer Gemini models return a list of blocks, so extract only the text
-    content = response.content
-    if isinstance(content, list):
-        return "".join(
-            block.get("text", "") if isinstance(block, dict) else str(block)
-            for block in content
-        )
-    return content
-
+    return response.content if isinstance(response.content, str) else str(response.content)
 
 
 if __name__ == "__main__":
